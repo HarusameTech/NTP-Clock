@@ -1,5 +1,9 @@
 # NTP-Clock
 
+- `./NTP_Clock`
+  - ソースファイル保管場所
+  - [`NTP_Clock.ino`](../NTP_Clock/NTP_Clock.ino)
+
 ## 入れたい機能
 
 - WebUI, Telnet, SSH による設定

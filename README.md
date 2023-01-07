@@ -1,9 +1,10 @@
 # NTP-Clock
 
 - `./NTP_Clock`
-  - ソースファイル保管場所
   - [`NTP_Clock.ino`](./NTP_Clock/NTP_Clock.ino)
   - ソースファイル
+- [`README.md`](./README.md)
+  - このファイル
 
 ## 入れたい機能
 

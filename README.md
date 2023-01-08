@@ -20,15 +20,18 @@
 使用マイコン
 
 - Raspberry Pi Pico
+  - <https://akizukidenshi.com/catalog/g/gM-16132/>
 
 イーサネットコントローラ IC
 
 - ENC28J60
+  - <https://akizukidenshi.com/catalog/g/gI-01948/>
 - 3.3V IO 5V トレラント
 
 7 セグメントディスプレイ
 
 - MAX7219
+  - <https://www.amazon.co.jp/dp/B09FZ4S5JQ/>
 
 照度計
 

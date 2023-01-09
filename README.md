@@ -1,5 +1,7 @@
 # NTP-Clock
 
+- `./3D_models`
+  - 筐体の 3D モデル
 - `./NTP_Clock`
   - [`NTP_Clock.ino`](./NTP_Clock/NTP_Clock.ino)
   - ソースファイル

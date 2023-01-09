@@ -8,6 +8,8 @@
   - ソースファイル
 - [`README.md`](./README.md)
   - このファイル
+- [`chassis_prot_note.md`](./chassis_prot_note.md)
+  - 筐体設計メモ
 - [`partslist.md`](./partslist.md)
   - 使用する部品のリスト
 

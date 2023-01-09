@@ -5,6 +5,8 @@
   - ソースファイル
 - [`README.md`](./README.md)
   - このファイル
+- [`partslist.md`](./partslist.md)
+  - 使用する部品のリスト
 
 ## 入れたい機能
 

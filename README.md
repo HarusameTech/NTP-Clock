@@ -33,12 +33,13 @@
 
 - ENC28J60
   - <https://akizukidenshi.com/catalog/g/gI-01948/>
-- 3.3V IO 5V トレラント
+  - 3.3V IO 5V トレラント
 
 7 セグメントディスプレイ
 
 - MAX7219
   - <https://www.amazon.co.jp/dp/B09FZ4S5JQ/>
+  - 5V IO なので、レベルコンバータが必要
 
 照度計
 

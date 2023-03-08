@@ -5,7 +5,7 @@
   - 筐体の 3D モデル置き場
 - `./NTP_Clock`
   - [`NTP_Clock.ino`](./NTP_Clock/NTP_Clock.ino)
-  - ソースファイル
+    - ソースファイル
 - [`README.md`](./README.md)
   - このファイル
 - [`chassis_prot_note.md`](./chassis_prot_note.md)

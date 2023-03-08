@@ -7,25 +7,14 @@
 void setup() {
   pinMode(LED_BULITIN, OUTPUT);
 
-  pinMode(MAX7219_CS,  OUTPUT);
-  pinMode(MAX7219_CLK, OUTPUT);
-  pinMode(MAX7219_DIN, OUTPUT);
-  
-  digitalWrite(MAX7219_CS,  HIGH);
-  digitalWrite(MAX7219_CLK,  LOW);
-  digitalWrite(MAX7219_DIN,  LOW);
-
-  LED_OUT(0x9, 0xff);    //7セグでデコードするビットに1を立てる:
-  LED_OUT(0xA,    5);    //輝度を設定, 0-15:
-  LED_OUT(0xB,    7);    //使用する桁数を指定, 桁数-1:
-  LED_OUT(0xC,    1);    //特にいじる必要なし:
-  LED_OUT(0xF,    0);    //同上:
+  MAX7216_init();
 }
 
 void setup1() {
 }
 
 void loop() {
+  // LED のテスト用コード:
   LED_OUT(0x1, random(10));
   LED_OUT(0x2, random(10));
   LED_OUT(0x3, random(10));
@@ -41,6 +30,26 @@ void loop() {
 void loop2() {
 }
 
+void MAX7216_init(void) {
+  // GPIO のモード設定:
+  pinMode(MAX7219_CS,  OUTPUT);
+  pinMode(MAX7219_CLK, OUTPUT);
+  pinMode(MAX7219_DIN, OUTPUT);
+  
+  // GPIO の初期状態設定:
+  digitalWrite(MAX7219_CS,  HIGH);  // Low Active:
+  digitalWrite(MAX7219_CLK,  LOW);
+  digitalWrite(MAX7219_DIN,  LOW);
+
+  // MAX7216 の初期設定:
+  LED_OUT(0x9, 0xff);    //7セグでデコードするビットに1を立てる:
+  LED_OUT(0xA,    5);    //輝度を設定, 0-15:
+  LED_OUT(0xB,    7);    //使用する桁数を指定, 桁数-1:
+  LED_OUT(0xC,    1);    //特にいじる必要なし:
+  LED_OUT(0xF,    0);    //同上:
+}
+
+// MAX7216 にデータを書き込む関数:
 void LED_OUT(uint8_t addr, uint8_t dat){
   digitalWrite(MAX7219_CS, LOW);
   shiftOut(MAX7219_DIN, MAX7219_CLK, MSBFIRST, addr);

@@ -1,9 +1,9 @@
 # NTP-Clock
 ## フォルダ階層
 
-- `./3D_models`
+- `3D_models/`
   - 筐体の 3D モデル置き場
-- `./NTP_Clock`
+- `NTP_Clock/`
   - [`NTP_Clock.ino`](./NTP_Clock/NTP_Clock.ino)
     - ソースファイル
 - [`README.md`](./README.md)

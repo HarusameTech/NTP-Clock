@@ -31,8 +31,8 @@
 
 イーサネットコントローラ IC
 
-- ENC28J60
-  - <https://akizukidenshi.com/catalog/g/gI-01948/>
+- W5500 モジュール
+  - <https://www.amazon.co.jp/gp/product/B08C7DX4HN/>
   - 3.3V IO 5V トレラント
 
 7 セグメントディスプレイ
